@@ -1,0 +1,91 @@
+# --- Build results ---
+bin/
+obj/
+out/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]uild[Ll]og.*
+*.[Pp]ublish.xml
+*.pidb
+*.userprefs
+
+# --- .NET / ASP.NET Core ---
+*.dll
+*.exe
+*.pdb
+*.cache
+*.deps.json
+*.runtimeconfig.json
+*.staticwebassets.endpoints.json
+project.assets.json
+project.nuget.cache
+project.fragment.nuget.cache
+app.config
+*.manifest
+*.local
+
+# --- NuGet ---
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+
+# --- Test results ---
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+TestResults/
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# --- Visual Studio ---
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.userprefs
+*.swp
+*.swo
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# --- ReSharper / Rider ---
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+.idea/
+*.sln.ide
+
+# --- OS junk ---
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Logs ---
+*.log
+logs/
+*.trx
+
+# --- Misc ---
+*.tmp
+*.bak
+*.swp
+.vscode/
+appsettings.*.local.json
+secrets.json

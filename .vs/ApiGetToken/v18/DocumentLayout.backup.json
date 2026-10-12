@@ -1,29 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Softwares\\Apis\\ApiGetToken\\",
+  "WorkspaceRootPath": "D:\\Softwares\\ApiGetToken\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apis\\apigettoken\\apigettoken\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|solutionrelative:apigettoken\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apis\\apigettoken\\apigettoken\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apigettoken\\apigettoken\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|solutionrelative:apigettoken\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apis\\apigettoken\\apigettoken\\helpers\\generatetoken\\generatetoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|solutionrelative:apigettoken\\helpers\\generatetoken\\generatetoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apigettoken\\apigettoken\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|solutionrelative:apigettoken\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apis\\apigettoken\\apigettoken\\helpers\\authentication\\usercreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apigettoken\\apigettoken\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|solutionrelative:apigettoken\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apigettoken\\apigettoken\\helpers\\authentication\\usercreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|solutionrelative:apigettoken\\helpers\\authentication\\usercreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apis\\apigettoken\\apigettoken\\helpers\\authentication\\authenticateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apigettoken\\apigettoken\\helpers\\generatetoken\\generatetoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|solutionrelative:apigettoken\\helpers\\generatetoken\\generatetoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apigettoken\\apigettoken\\helpers\\authentication\\authenticateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|solutionrelative:apigettoken\\helpers\\authentication\\authenticateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apis\\apigettoken\\apigettoken\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apigettoken\\apigettoken\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|solutionrelative:apigettoken\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,35 +46,50 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiGetToken\\appsettings.json",
+              "ToolTip": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\appsettings.json",
+              "RelativeToolTip": "ApiGetToken\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-10T18:50:01.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "UserCreator.cs",
-              "DocumentMoniker": "D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Helpers\\Authentication\\UserCreator.cs",
+              "DocumentMoniker": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\Helpers\\Authentication\\UserCreator.cs",
               "RelativeDocumentMoniker": "ApiGetToken\\Helpers\\Authentication\\UserCreator.cs",
-              "ToolTip": "D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Helpers\\Authentication\\UserCreator.cs",
+              "ToolTip": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\Helpers\\Authentication\\UserCreator.cs",
               "RelativeToolTip": "ApiGetToken\\Helpers\\Authentication\\UserCreator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-20T18:46:08.944Z"
+              "WhenOpened": "2026-06-20T18:46:08.944Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UsuariosController.cs",
-              "DocumentMoniker": "D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Controllers\\UsuariosController.cs",
+              "DocumentMoniker": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "ApiGetToken\\Controllers\\UsuariosController.cs",
-              "ToolTip": "D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Controllers\\UsuariosController.cs",
+              "ToolTip": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\Controllers\\UsuariosController.cs",
               "RelativeToolTip": "ApiGetToken\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T01:29:59.524Z"
+              "WhenOpened": "2026-06-17T01:29:59.524Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "ApiGetToken\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\Controllers\\AccountController.cs",
               "RelativeToolTip": "ApiGetToken\\Controllers\\AccountController.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAowD8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -78,24 +97,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Program.cs",
+              "DocumentMoniker": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\Program.cs",
               "RelativeDocumentMoniker": "ApiGetToken\\Program.cs",
-              "ToolTip": "D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Program.cs",
+              "ToolTip": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\Program.cs",
               "RelativeToolTip": "ApiGetToken\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAwwCYAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwCsAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-15T18:39:38.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "GenerateToken.cs",
-              "DocumentMoniker": "D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Helpers\\GenerateToken\\GenerateToken.cs",
+              "DocumentMoniker": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\Helpers\\GenerateToken\\GenerateToken.cs",
               "RelativeDocumentMoniker": "ApiGetToken\\Helpers\\GenerateToken\\GenerateToken.cs",
-              "ToolTip": "D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Helpers\\GenerateToken\\GenerateToken.cs",
+              "ToolTip": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\Helpers\\GenerateToken\\GenerateToken.cs",
               "RelativeToolTip": "ApiGetToken\\Helpers\\GenerateToken\\GenerateToken.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -103,11 +122,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AuthenticateUser.cs",
-              "DocumentMoniker": "D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Helpers\\Authentication\\AuthenticateUser.cs",
+              "DocumentMoniker": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\Helpers\\Authentication\\AuthenticateUser.cs",
               "RelativeDocumentMoniker": "ApiGetToken\\Helpers\\Authentication\\AuthenticateUser.cs",
-              "ToolTip": "D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Helpers\\Authentication\\AuthenticateUser.cs",
+              "ToolTip": "D:\\Softwares\\ApiGetToken\\ApiGetToken\\Helpers\\Authentication\\AuthenticateUser.cs",
               "RelativeToolTip": "ApiGetToken\\Helpers\\Authentication\\AuthenticateUser.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA1wAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Softwares\\Apis\\ApiGetToken\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apis\\apigettoken\\apigettoken\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|solutionrelative:apigettoken\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Controllers\\LoginController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ApiGetToken\\Controllers\\LoginController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F0B5C038-0262-4F98-A2EA-5D8D43D4326A}|ApiGetToken\\ApiGetToken.csproj|d:\\softwares\\apis\\apigettoken\\apigettoken\\helpers\\authentication\\authenticateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,8 +42,7 @@
               "RelativeToolTip": "ApiGetToken\\Helpers\\Authentication\\IAuthenticateUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T19:57:47.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T19:57:47.174Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "ApiGetToken\\Helpers\\GenerateToken\\GenerateToken.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-10T17:16:50.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2023-11-10T17:16:50.83Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "ApiGetToken\\Helpers\\Authentication\\AuthenticateUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-11-10T17:15:52.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2023-11-10T17:15:52.318Z"
             },
             {
               "$type": "Document",
@@ -79,10 +76,8 @@
               "RelativeDocumentMoniker": "ApiGetToken\\Controllers\\LoginController.cs",
               "ToolTip": "D:\\Softwares\\Apis\\ApiGetToken\\ApiGetToken\\Controllers\\LoginController.cs",
               "RelativeToolTip": "ApiGetToken\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-10-20T13:34:55.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2023-10-20T13:34:55.888Z"
             }
           ]
         }
