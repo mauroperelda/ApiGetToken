@@ -1,3 +1,8 @@
+# ────────────────────────────────────────────────────────────
+# .gitignore único del repo ApiGetToken
+# Las reglas aplican recursivamente a todo el árbol.
+# ────────────────────────────────────────────────────────────
+
 # --- Build results ---
 bin/
 obj/
@@ -13,7 +18,6 @@ bld/
 [Bb]uild[Ll]og.*
 *.[Pp]ublish.xml
 *.pidb
-*.userprefs
 
 # --- .NET / ASP.NET Core ---
 *.dll
@@ -40,8 +44,6 @@ app.config
 
 # --- Test results ---
 [Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
-TestResults/
 *.coverage
 *.coveragexml
 coverage*.json
@@ -55,11 +57,6 @@ coverage*.info
 *.suo
 *.sln.docstates
 *.userprefs
-*.swp
-*.swo
-[Dd]esktop.ini
-$RECYCLE.BIN/
-*.lnk
 
 # --- ReSharper / Rider ---
 _ReSharper*/
@@ -67,6 +64,9 @@ _ReSharper*/
 *.DotSettings.user
 .idea/
 *.sln.ide
+
+# --- IDEs / Editores ---
+.vscode/
 
 # --- OS junk ---
 .DS_Store
@@ -76,6 +76,7 @@ ehthumbs.db
 ehthumbs_vista.db
 Desktop.ini
 $RECYCLE.BIN/
+*.lnk
 
 # --- Logs ---
 *.log
@@ -86,8 +87,9 @@ logs/
 *.tmp
 *.bak
 *.swp
-.vscode/
-# Local dev secrets: ignorado para que nunca se commitee.
+*.swo
+
+# --- Secretos locales (no se commitean NUNCA) ---
 # Mantenemos esta convención propia (no la default de ASP.NET) porque
 # guardamos los secretos reales del entorno Development del desarrollador.
 appsettings.Development.json
