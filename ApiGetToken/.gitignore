@@ -87,5 +87,8 @@ logs/
 *.bak
 *.swp
 .vscode/
-appsettings.*.local.json
+# Local dev secrets: ignorado para que nunca se commitee.
+# Mantenemos esta convención propia (no la default de ASP.NET) porque
+# guardamos los secretos reales del entorno Development del desarrollador.
+appsettings.Development.json
 secrets.json
