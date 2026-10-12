@@ -32,14 +32,14 @@ public partial class ManagerOdontosoftContext : DbContext
 
             entity.ToTable("User");
 
-            entity.Property(e => e.ActivatedDate).HasColumnType("datetime");
-            entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+            entity.Property(e => e.ActivatedDate).HasColumnType("timestamp");
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp");
             entity.Property(e => e.Email).HasMaxLength(120);
             entity.Property(e => e.LastName).HasMaxLength(100);
             entity.Property(e => e.Name).HasMaxLength(100);
             entity.Property(e => e.Password).HasMaxLength(60);
-            entity.Property(e => e.PasswordExpirationDate).HasColumnType("datetime");
-            entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
+            entity.Property(e => e.PasswordExpirationDate).HasColumnType("timestamp");
+            entity.Property(e => e.UpdatedDate).HasColumnType("timestamp");
             entity.Property(e => e.Username).HasMaxLength(50);
         });
 
@@ -53,8 +53,8 @@ public partial class ManagerOdontosoftContext : DbContext
             entity.Property(e => e.Modulo).HasMaxLength(50).IsRequired();
             entity.Property(e => e.Nombre).HasMaxLength(150).IsRequired();
             entity.Property(e => e.Descripcion).HasMaxLength(500);
-            entity.Property(e => e.CreatedDate).HasColumnType("datetime");
-            entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp");
+            entity.Property(e => e.UpdatedDate).HasColumnType("timestamp");
 
             entity.HasIndex(e => e.Codigo).IsUnique().HasDatabaseName("UX_Permiso_Codigo");
             entity.HasIndex(e => e.Modulo).HasDatabaseName("IX_Permiso_Modulo");
@@ -69,8 +69,8 @@ public partial class ManagerOdontosoftContext : DbContext
             entity.Property(e => e.Codigo).HasMaxLength(100).IsRequired();
             entity.Property(e => e.Nombre).HasMaxLength(150).IsRequired();
             entity.Property(e => e.Descripcion).HasMaxLength(500);
-            entity.Property(e => e.CreatedDate).HasColumnType("datetime");
-            entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp");
+            entity.Property(e => e.UpdatedDate).HasColumnType("timestamp");
 
             entity.HasIndex(e => e.Codigo).IsUnique().HasDatabaseName("UX_Rol_Codigo");
         });
@@ -81,7 +81,7 @@ public partial class ManagerOdontosoftContext : DbContext
 
             entity.ToTable("RolPermiso");
 
-            entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp");
 
             entity.HasOne(d => d.Rol)
                 .WithMany(p => p.RolesPermisos)
@@ -104,7 +104,7 @@ public partial class ManagerOdontosoftContext : DbContext
 
             entity.ToTable("UsuarioRol");
 
-            entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp");
 
             entity.HasOne(d => d.Usuario)
                 .WithMany(p => p.UsuariosRoles)

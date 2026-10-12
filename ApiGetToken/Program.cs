@@ -7,6 +7,14 @@ using ApiGetToken.DATA;
 using ApiGetToken.Helpers.GenerateToken;
 using ApiGetToken.Helpers.Authentication;
 
+// Restauramos el comportamiento legacy de Npgsql pre-6.0: permite escribir DateTime con
+// Kind=Utc/Unspecified/Local en columnas "timestamp without time zone" sin lanzar excepción.
+// Sin esto, UserCreator (que usa DateTime.UtcNow) falla al hacer INSERT contra columnas
+// de tipo timestamp. Debe setearse ANTES de cualquier llamada a Npgsql.
+// TODO: cuando podamos migrar el schema, usar "timestamp with time zone" (timestamptz) y
+// sacar este switch — es el approach idiomático en Postgres.
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -36,7 +44,7 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddDbContext<ManagerOdontosoftContext>(option =>
 {
-    option.UseSqlServer(builder.Configuration.GetConnectionString("cadenaSql"), sqlServerOptions => sqlServerOptions.EnableRetryOnFailure());
+    option.UseNpgsql(builder.Configuration.GetConnectionString("cadenaSql"), npgsqlOptions => npgsqlOptions.EnableRetryOnFailure());
 });
 
 // ── JWT (compartido con OdontoSoft.API) ────────────────────────────────────
