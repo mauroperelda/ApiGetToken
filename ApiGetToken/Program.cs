@@ -82,6 +82,25 @@ builder.Services.AddTransient<IUserCreator, UserCreator>();
 
 var app = builder.Build();
 
+// ── EF Migrations automáticas al iniciar ──────────────────────────────────
+// Aplica las migrations pendientes en cada startup. Idempotente: si no hay
+// nada nuevo, no hace nada. Si falla (DB no accesible, migration corrupta),
+// la API no arranca — Render detecta el crash en health check y deja el
+// deploy viejo sirviendo en lugar del nuevo. Mejor que arrancar y tirar
+// errores en cada request.
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<ManagerOdontosoftContext>();
+    var pending = db.Database.GetPendingMigrations().ToList();
+    if (pending.Count > 0)
+    {
+        app.Logger.LogInformation(
+            "Aplicando {Count} migrations pendientes: {Names}",
+            pending.Count, string.Join(", ", pending));
+        db.Database.Migrate();
+    }
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
