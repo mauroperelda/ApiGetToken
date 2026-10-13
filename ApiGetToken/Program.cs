@@ -53,6 +53,7 @@ builder.Services.AddDbContext<ManagerOdontosoftContext>(option =>
 // tiene que matchear el token que emite GenerateToken.
 var jwtKey = builder.Configuration["Jwt:Key"]
              ?? throw new InvalidOperationException("Falta Jwt:Key en appsettings.json");
+Console.WriteLine($"[DIAG] jwtKey.Length={jwtKey.Length} first8={jwtKey.Substring(0, Math.Min(8, jwtKey.Length))} last8={jwtKey.Substring(Math.Max(0, jwtKey.Length - 8))}");
 var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? "https://localhost:7229";
 var jwtAudience = builder.Configuration["Jwt:Audience"] ?? "https://localhost:7229";
 
