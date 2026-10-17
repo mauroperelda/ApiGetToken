@@ -29,7 +29,32 @@ builder.Services.AddControllers()
     });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+  options.SwaggerDoc("v1", new Microsoft.OpenApi.OpenApiInfo
+  {
+    Title = "ApiGetToken",
+    Version = "v1",
+    Description = "Servicio emisor de JWT. Endpoints públicos: POST /api/Account/Login y POST /api/Account/Register. El resto requiere Bearer JWT.",
+  });
+
+  // Definición del esquema "Bearer" → habilita el botón "Authorize" en Swagger UI
+  // para pegar el JWT y que se envíe en cada request.
+  options.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.OpenApiSecurityScheme
+  {
+    Description = "JWT emitido por /api/Account/Login. Pegá SOLO el token (sin el prefijo 'Bearer ').",
+    Name = "Authorization",
+    In = Microsoft.OpenApi.ParameterLocation.Header,
+    Type = Microsoft.OpenApi.SecuritySchemeType.Http,
+    Scheme = "bearer",
+    BearerFormat = "JWT",
+  });
+
+  // El AuthOperationFilter agrega el requisito "Bearer" SOLO a las operaciones
+  // que tienen [Authorize] (en runtime). Las públicas (Login/Register) quedan
+  // sin candado. Ver filtro para los detalles.
+  options.OperationFilter<ApiGetToken.AuthOperationFilter>();
+});
 
 // CORS para el front (Vite dev server y tunnels públicos trycloudflare.com)
 builder.Services.AddCors(options =>
@@ -72,7 +97,21 @@ builder.Services
             ClockSkew = TimeSpan.Zero,
         };
     });
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(options =>
+{
+  // "RequireAdministrator" → chequea el claim custom "administrator" (string "true")
+  // que emite GenerateToken para usuarios con User.IsAdministrator = true.
+  // La razón de NO usar [Authorize(Roles = "Administrador")] directamente es
+  // que .NET solo mapea automáticamente el claim ClaimTypes.Role estándar
+  // (http://schemas.microsoft.com/ws/2008/06/identity/claims/role); un claim
+  // custom "Rol" o "administrator" lo ignora. Por eso armamos una policy
+  // explícita.
+  options.AddPolicy("RequireAdministrator", policy =>
+  {
+    policy.RequireAuthenticatedUser();
+    policy.RequireAssertion(ctx => ctx.User.HasClaim("administrator", "true"));
+  });
+});
 
 builder.Services.AddTransient<IGenerateToken, GenerateToken>();
 builder.Services.AddTransient<IAuthenticateUser, AuthenticateUser>();
@@ -102,11 +141,11 @@ using (var scope = app.Services.CreateScope())
 }
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// Swagger UI disponible en todos los ambientes (como en OdontoSoft.API) porque
+// las rutas no son sensibles y el equipo lo usa para inspeccionar el contrato.
+// En producción, considerar restringir por red/VPN si la spec es privada.
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseCors("AllowFrontend");
 //app.UseHttpsRedirection(); // desactivado: rompe el flujo a través de tunnels HTTP

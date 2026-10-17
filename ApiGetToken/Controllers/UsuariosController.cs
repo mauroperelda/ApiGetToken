@@ -15,6 +15,7 @@ namespace ApiGetToken.Controllers
     /// </summary>
     [Route("api/Usuarios")]
     [ApiController]
+    [ApiGetToken.RequireAdministrator]
     public class UsuariosController : ControllerBase
     {
         private readonly ManagerOdontosoftContext _context;
